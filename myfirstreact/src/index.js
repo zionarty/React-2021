@@ -10,13 +10,31 @@ const myElement = <h1>Test Element</h1>
 const testelement = React.createElement('h1',{},'Test Element2')
 
 //Expressions in JSX
-const testElement2 = <h1>React is {5+5} time better with jsx</h1>
+const myelement = <h1>React is {5 + 5} times better with JSX</h1>;
 
+//Inserting a Large Block of HTML
+const testelement2 = (
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+)
+
+//One Top Level Element
+const testelement3 = (
+  <div>
+    <h1>Test H1</h1>
+    <h2>Test H2</h2>
+  </div>
+)
+
+//Elements Must be Closed
+const testelement4 = <input type="text" />
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
-  testelement2,document.getElementById('root')
+  testelement4,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
